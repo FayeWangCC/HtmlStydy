@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>语义化布局标签</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+		
+		header {
+			width: 800px;
+			height: 80px;
+			margin: 0 auto;
+			margin-top: 50px;
+			border: 1px black solid;
+			background-color: yellow;
+		}
+		
+		nav {
+			width: 800px;
+			height: 50px;
+			margin: 0 auto;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			border: 1px black solid;
+			background-color: tomato;
+		}
+		
+		div {
+			width: 800px;
+			height: 500px;
+			margin: 0 auto;
+			margin-bottom: 10px;
+			display: table;
+		}
+		
+		aside {
+			width: 23%;
+			height: 500px;
+			border: 1px black solid;
+			background-color: green;
+			float: left;
+		}
+		
+		section {
+			width: 75%;
+			height: 500px;
+			border: 1px black solid;
+			background-color: khaki;
+			float: right;
+		}
+		
+		article {
+			width: 300px;
+			height: 300px;
+			margin:50px 50px;
+			border: 1px black solid;
+			background-color: pink;
+		}
+		
+		footer {
+			width: 800px;
+			height: 80px;
+			margin: 0 auto;
+			border: 1px black solid;
+			background-color: skyblue;
+		}
+	</style>
+</head>
+<body>
+<header>header：常用于网页头部的布局</header>
+
+<nav>nav:常用于网页导航的布局</nav>
+
+<div>
+	<aside>aside:常用于网页侧边栏的布局</aside>
+	
+	<section>
+		section:常用于网页区块的布局
+		<article>
+			article:常用于网页文章的布局
+		</article>
+	</section>
+</div>
+
+<footer>footer:常用于网页底部的布局</footer>
+</body>
+</html>
