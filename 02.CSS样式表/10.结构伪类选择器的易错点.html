@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>结构伪类选择器的易错点</title>
+	<style>
+		/*问题：在下列案例中，找到第一个a标签字体颜色改为红色*/
+		ul>li:first-child>a{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+<ul>
+	<li><a href="#">我是第1个a标签</a></li>
+	<li><a href="#">我是第2个a标签</a></li>
+	<li><a href="#">我是第3个a标签</a></li>
+	<li><a href="#">我是第4个a标签</a></li>
+	<li><a href="#">我是第5个a标签</a></li>
+	<li><a href="#">我是第6个a标签</a></li>
+	<li><a href="#">我是第7个a标签</a></li>
+	<li><a href="#">我是第8个a标签</a></li>
+</ul>
+</body>
+</html>
