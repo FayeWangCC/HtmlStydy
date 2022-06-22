@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>结构伪类选择器</title>
+	<style>
+		/*需求：找到第3个li标签,并设置字体颜色为红色*/
+		/*1.使用nth-child*/
+		ul>li:nth-child(4){
+			/*color: red;*/
+		}
+		/*2.使用nth-of-type*/
+		ul>li:nth-of-type(3){
+			color: red;
+		}
+	</style>
+</head>
+<body>
+<ul>
+	<li>我是li1</li>
+	<li>我是li2</li>
+	<div>我是div</div>
+	<li>我是li3</li>
+	<li>我是li4</li>
+	<li>我是li5</li>
+	<li>我是li6</li>
+	<li>我是li7</li>
+	<li>我是li8</li>
+	<li>我是li9</li>
+</ul>
+</body>
+</html>
