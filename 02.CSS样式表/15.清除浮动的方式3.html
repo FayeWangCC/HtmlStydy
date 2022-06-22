@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>清除浮动的方式3</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<style>
+		body{
+			width: 500px;
+			height: 500px;
+			margin: 100px auto;
+			border: 1px solid black;
+		}
+		.father{
+			width: 500px;
+			background-color: skyblue;
+			border: 5px solid black;
+			box-sizing: border-box;
+		}
+		.son{
+			width: 100px;
+			height: 200px;
+			background-color: tomato;
+			float: left;
+		}
+		.clearfix::after{
+			content: '.';
+			display: block;
+			clear: both;
+			/*补充代码：在网页中看不到伪元素，提高兼容性*/
+			height: 0;
+			visibility: hidden;
+		}
+	</style>
+</head>
+<body>
+<div class="father clearfix">
+	<div class="son"></div>
+</div>
+<br>
+<pre>
+方式3
+
+单伪元素清除法
+
+	.clearfix::after{
+			content: '.';
+			display: block;
+			clear: both;
+			/*补充代码：在网页中看不到伪元素，提高兼容性*/
+			height: 0;
+			visibility: hidden;
+		}
+	
+	在父元素上添加clearfix类名即可
+</pre>
+</body>
+</html>

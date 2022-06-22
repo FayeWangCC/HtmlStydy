@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>清除浮动的方式2</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<style>
+		body{
+			width: 500px;
+			height: 500px;
+			margin: 100px auto;
+			border: 1px solid black;
+		}
+		.father{
+			width: 500px;
+			height: 300px;
+			background-color: skyblue;
+			border: 5px solid black;
+			box-sizing: border-box;
+		}
+		.son{
+			width: 100px;
+			height: 200px;
+			background-color: tomato;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+<div class="father clearfix">
+	<div class="son"></div>
+</div>
+<br>
+<pre>
+方式2
+
+在父元素的末尾添加一个元素并设置clear:both
+	
+	缺点：
+		添加额外元素会破坏原有HTML结构，使页面变得复杂
+</pre>
+</body>
+</html>

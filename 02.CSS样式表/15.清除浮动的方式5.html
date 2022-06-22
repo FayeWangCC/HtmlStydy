@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>清除浮动的方式4</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<style>
+		body{
+			width: 500px;
+			height: 500px;
+			margin: 100px auto;
+			border: 1px solid black;
+		}
+		.father{
+			width: 500px;
+			background-color: skyblue;
+			border: 5px solid black;
+			box-sizing: border-box;
+			overflow: hidden;
+		}
+		.son{
+			width: 100px;
+			height: 200px;
+			background-color: tomato;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+<div class="father clearfix">
+	<div class="son"></div>
+</div>
+<br>
+<pre>
+方式5
+
+给父元素设置overflow:hidden
+	
+	优点：方便
+</pre>
+</body>
+</html>

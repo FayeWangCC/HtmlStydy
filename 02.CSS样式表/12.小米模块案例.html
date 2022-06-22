@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小米模块案例</title>
+	<style>
+		/*主盒子设置大小并居中*/
+		.main{
+			width: 1226px;
+			height: 614px;
+			margin: 100px auto;
+		}
+		/*左侧盒子设置大小并做浮动*/
+		.left{
+			width: 234px;
+			height: 100%;
+			background-color: #800080;
+			float: left;
+		}
+		/*右侧盒子设置大小并右浮动*/
+		.right{
+			width: 978px;
+			height: 100%;
+			float: right;
+		}
+		/*选中前4个小盒子设置大小并设置右外边距和下边距*/
+		.card:nth-child(-n+4){
+			width: 234px;
+			height: 300px;
+			margin-bottom: 14px;
+			margin-right: 14px;
+			background-color: #87ceeb;
+			float: left;
+		}
+		/*选中后4个小盒子设置大小并设置右外边距*/
+		.card:nth-child(n-4){
+			width: 234px;
+			height: 300px;
+			margin-right: 14px;
+			background-color: #87ceeb;
+			float: left;
+		}
+		/*选中第4和第8个盒子并设置外右边距*/
+		.card:nth-child(4),.card:nth-child(8){
+			margin-right: 0;
+		}
+	</style>
+</head>
+<body>
+<div class="main">
+	<div class="left"></div>
+	<div class="right">
+		<div class="card"></div>
+		<div class="card"></div>
+		<div class="card"></div>
+		<div class="card"></div>
+		<div class="card"></div>
+		<div class="card"></div>
+		<div class="card"></div>
+		<div class="card"></div>
+	</div>
+</div>
+</body>
+</html>
