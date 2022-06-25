@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<!--网页标题-->
+	<title>位移的基本使用</title>
+	<!--网页描述-->
+	<meta name="description" content="Description"/>
+	<!--网页关键词-->
+	<meta name="keywords" content="Keywords"/>
+	<!--网页图标-->
+	<link rel="shortcut icon" href="Ico" type="image/x-icon">
+	
+	<style>
+		.father {
+			width: 500px;
+			height: 300px;
+			margin: 100px auto;
+			border: 1px solid black;
+		}
+		
+		.son {
+			width: 200px;
+			height: 100px;
+			background-color: pink;
+			transition: all 0.5s;
+		}
+		
+		/*鼠标移入到父盒子，son改变位置*/
+		.father:hover .son {
+			/*transform: translate(100px,50px);*/
+			transform: translate(100%, 50%);
+		}
+	</style>
+</head>
+<body>
+<div class="father">
+	<div class="son">
+	</div>
+</div>
+</body>
+</html>
