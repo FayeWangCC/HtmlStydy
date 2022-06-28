@@ -7,34 +7,32 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	
 	<!--网页标题-->
-	<title>多重转换效果</title>
+	<title>6.缩放效果</title>
 	<!--网页描述-->
-	<meta name="description" content="Description"/>
+	<meta name="description" content=""/>
 	<!--网页关键词-->
-	<meta name="keywords" content="Keywords"/>
+	<meta name="keywords" content=""/>
 	<!--网页图标-->
-	<link rel="shortcut icon" href="Ico" type="image/x-icon">
+	<link rel="shortcut icon" href="" type="image/x-icon">
 	
 	<style>
 		.box {
-			width: 800px;
-			height: 200px;
+			width: 300px;
+			height: 300px;
 			border: 1px solid black;
-		}
-		
-		img {
-			height: 200px;
-			transition: all 4s;
+			background-image: url("./images/6.缩放效果/tyre.png");
+			background-size: cover;
+			overflow: hidden;
 		}
 		
 		.box:hover img {
-			transform: translate(600px) rotate(360deg);
+			transform: scale(1.2);
 		}
 	</style>
 </head>
 <body>
 <div class="box">
-	<img src="./images/5.多重旋转效果/tyre.png" alt="">
+	<img src="./images/6.缩放效果/tyre.png" alt="">
 </div>
 </body>
 </html>
